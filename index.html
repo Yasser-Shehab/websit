@@ -1,0 +1,114 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- home page -->
+  <div class="home ">
+    <nav class="navbar bg-black fixed-top row">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white px-5 col-9">Hand Gesture Recognation</a>
+
+        <!-- <div>
+          <div id="g_id_onload"
+            data-client_id="775954644880-fhnm2a4mnmgr3g3pjm0qpbobefe0m4lp.apps.googleusercontent.com"
+           data-auto_prompt="true"
+            data-callback="loginCallback">
+          </div>
+          <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="signin"
+            data-shape="pill" data-logo_alignment="left">
+          </div>
+        </div> -->
+
+        <!-- <div>
+
+          <!-- Button trigger modal 
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+
+          <!-- Modal 
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+    </nav>
+    <div class="layer"></div>
+    <div class=" content w-25 text-white">
+      <h1>Hand Gesture</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ea dolores, quasi pariatur labore sint quod
+        doloremque non esse </p>
+
+      <button class="btn" id="myButton">login</button>
+      <button class="btn">signin</button>
+    </div>
+  </div>
+
+ <!-- about -->
+  <div class="container " id="about">
+    <div class=" larger shadow bg-light  my-md-5 p-5 ">
+      <div class="row  ">
+        <div class="col-6 mt-4 ">
+          <div class="  text-center">
+            <img src="image/pexels-photo-4240578 (1).webp" class="w-100 shadow-lg">
+          </div>
+        </div>
+        <div class="col-6  mt-4">
+          <div class="row">
+            <h2>Gesture </h2>
+            <p class=" text-secondary  p  ">
+
+              Gesture recognition is the process of interpreting human gestures via mathematical algorithms. Gestures
+              can be any physical movement or action that conveys information, often involving the hands, arms, body,
+              face, or even eye movements. Gesture recognition technology enables computers to understand and respond to
+              human gestures, opening up possibilities for intuitive human-computer interaction.
+
+
+            </p>
+
+            <p class=" text-secondary   p">
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
+              volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+            </p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://accounts.google.com/gsi/client" async></script>
+  <script>
+    function loginCallback(response) {
+      window.location.href = "camera.html";
+      console.log(response)
+    }
+  </script>
+  <script >
+    function onClick() {
+    window.location.href = 'login.html';
+}
+
+let button = document.getElementById('myButton');
+button.addEventListener('click', onClick);
+  </script>
+</body>
+</html>
